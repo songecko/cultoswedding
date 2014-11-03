@@ -6,7 +6,7 @@ html, body {
 
 body > .container {
 	height: 100%;
-	background: url(../images/home-bottom-background.png) no-repeat;
+	background: url(../images/home-bottom-background.jpg) no-repeat;
 	background-position: bottom center;
 	background-size: contain;
 	max-width: 970px;
@@ -111,6 +111,10 @@ section#home {
 	margin: 40px auto 0 auto;
 }
 
+#partyIndicactions .moreInfo a {
+	color: #e76c3c;
+}
+
 .internalSection.tips {
 	background: none;
 }
@@ -119,7 +123,7 @@ section#home {
 	font-family: 'Dawning of a New Day', cursive;
 	position: absolute;
 	right: 0;
-	top: 30%;
+	top: 25%;
 	width: 50%;
 }
 
@@ -128,4 +132,47 @@ section#home {
 	font-size: 40px;
 	line-height: 42px;
 	color: #aaa4a2;
+}
+
+.internalSection.regalo .gift ul.giftMethods {
+	padding: 0;
+	list-style: none;
+}
+
+.internalSection.regalo .gift ul.giftMethods li {
+	margin-top: 20px;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 768px) 
+{
+	body > .container {
+		background: url(../images/home-bottom-background-mobile.jpg) no-repeat;
+		background-position: bottom center;
+		background-size: contain;
+	}
+	
+	header {
+		height: auto;
+		background: none;
+	}
+	
+	header ul.menu {
+		margin: 0;
+		position: static;
+	}
+	
+	header ul.menu li {
+		width: 25%;
+		text-align: center;
+	}
+	
+	header .menu a {
+		margin: 0;
+		font-size: 18px;
+	}
+	
+	.welcomeMessage p {
+		font-size: 22px;
+	}
 }

@@ -35,9 +35,10 @@
 				<li><a href="#" data-section="tips">tips</a></li>
 				<li><a href="#" data-section="regalo">regalo</a></li>
 			</ul>
+			<img src="images/header-background-mobile.jpg" class="img-responsive center-block visible-xs">
 		</header>
 		<section id="home">
-			<img src="images/home-text.png" class="img-responsive">
+			<img src="images/home-text.png" class="img-responsive hidden-xs">
 			
 			<div class="welcomeMessage">
 				<p>
@@ -53,8 +54,11 @@
 				<h3>Para que no pierdas tiempo buscando cómo llegar, aquí te facilitamos toda la información necesaria:</h3>
 				
 				<div class="addresses">
-					<p><strong>civil:</strong> 05/12/2014 / 10hs / av. cabildo 3067 / <a href="#">mapa</a></p>
-					<p><strong>fiesta:</strong> 06/12/2014 / 11hs / xxxxxxxxxxxxx / <a href="#">mapa</a> / <a href="#">ver video</a></p>
+					<p>
+						<strong>civil:</strong> 05/12/2014 / 10hs / av. cabildo 3067 / 
+						<a href="https://www.google.com.ar/maps/place/Av+Cabildo+3067,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires/@-34.5538385,-58.4641772,17z/data=!3m1!4b1!4m2!3m1!1s0x95bcb68263ce6291:0x43f5c0ea1432bcd4!6m1!1e1?hl=es-419" target="_blank">mapa</a>
+					</p>
+					<p><strong>fiesta:</strong> 06/12/2014 / 11hs / <a href="#" data-toggle="modal" data-target="#partyIndicactions">indicaciones</a></p>
 				</div>
 				
 				<img src="images/comoLlegar-map.png" class="img-responsive mapGraphic">
@@ -66,11 +70,74 @@
 				<img src="images/regalo-background.png" class="img-responsive">
 				<div class="gift">
 					<p>Con lo que puedas aportar nos vas a estar ayudando a pagar la luna de miel.</p>
-					
+					<ul class="giftMethods">
+						<li><a href="#" data-toggle="modal" data-target="#depositoBancario"><img src="images/depositoButton.jpg"></a></li>
+						<li>
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+								<input type="hidden" name="cmd" value="_donations">
+								<input type="hidden" name="business" value="NFF2XCNPWB2LN">
+								<input type="hidden" name="lc" value="AR">
+								<input type="hidden" name="item_name" value="Casamiento Pato y Diego">
+								<input type="hidden" name="currency_code" value="USD">
+								<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+								<input type="image" src="images/paypalButton.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</li>
+						<li><img src="images/efectivoButton.jpg"></li>
+					</ul>
 				</div>
 			</div>
 		</section>
 	</div>
+	
+	<div id="partyIndicactions" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+					<h4 class="modal-title">Indicaciones para llegar a la fiesta</h4>
+      			</div>
+      			<div class="modal-body">
+        			<h4>Cómo llegar...</h4>
+        			<ol>
+        				<li>Tomar la Panamericana.</li>
+        				<li>Al final de la Panamericana continuar por Ruta 8.</li>
+        				<li>En Ruta 8 Km. 73, doblar en la entrada al Remanso, calle Media caña.</li>
+        				<li>Seguir por Media caña y doblar a la derecha en calle La Baguala e inmediatamente a la izquierda hacia calle Amapola.</li>
+        				<li>Seguir 5 cuadras hasta Jacarandá y Amapola.</li>
+        			</ol>
+        			
+        			<h4>Más información</h4>
+        			<div class="moreInfo">
+	        			<a href="https://www.google.com.ar/maps/dir/Superi+2539,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires,+Argentina/-34.3950728,-59.1004139/@-34.3936665,-59.0983431,4635m/data=!3m1!1e3!4m9!4m8!1m5!1m1!1s0x95bcb67ded1f1543:0x6319e5428742c7b0!2m2!1d-58.4699402!2d-34.5639207!1m0!3e0?hl=es-419" target="_blank">
+	        				Google Maps
+	        			</a>
+	        			|
+	        			<a href="images/plano.jpg" target="_target">Plano del Barrio Jularó</a>
+	        			|
+	        			<a href="#">Video explicativo</a>        			
+        			</div>
+      			</div>
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<div id="depositoBancario" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+					<h4 class="modal-title">Datos del depósito bancario</h4>
+      			</div>
+      			<div class="modal-body">
+        			<p><strong>CBU:</strong> xxxxxxxxxxxxx </p>
+        			<p><strong>Cuenta n°:</strong> xxx/xxxxx</p>
+        			<p><strong>Banco:</strong> Santander Río</p>
+      			</div>
+    		</div><!-- /.modal-content -->
+  		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 	
 	<!-- javascript -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
