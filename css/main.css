@@ -150,6 +150,7 @@ section#home {
 		background: url(../images/home-bottom-background-mobile.jpg) no-repeat;
 		background-position: bottom center;
 		background-size: contain;
+		background: none;
 	}
 	
 	header {
@@ -174,5 +175,63 @@ section#home {
 	
 	.welcomeMessage p {
 		font-size: 22px;
+	}
+	
+	.internalSection.comoLlegar h3 {
+		font-size: 18px;
+	}
+	
+	.internalSection.comoLlegar .addresses {
+		margin: 15px auto 0 auto;
+	}
+	
+	.internalSection.comoLlegar .addresses p {
+		font-size: 20px;
+	}
+	
+	.internalSection.comoLlegar .mapGraphic {
+		margin: 20px auto 0 auto;
+	}
+	
+	.modal-title {
+		font-size: 15px;
+	}
+	
+	.modal-body h4 {
+		margin-top: 0;
+	}
+	
+	#partyIndicactions .moreInfo a {
+		font-size: 10px;
+	}
+	
+	.internalSection.regalo .gift {
+		position: static;
+		width: 100%;
+		padding: 0 20px;
+	}
+	
+	.internalSection.regalo .gift p {
+		line-height: 22px;
+		font-size: 22px;
+	}
+	
+	.internalSection.regalo .gift ul.giftMethods {
+		width: 70%;
+		margin: 30px auto 0 auto;
+	}
+	
+	.internalSection.tips {
+		background: rgba(247, 246, 241, 0.9);
+	}
+	
+	.internalSection.tips img.visible-xs {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.footerImage {
+		position: absolute;
+		bottom: 0; 
 	}
 }

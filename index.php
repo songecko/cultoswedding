@@ -15,6 +15,8 @@
     
 	<title>Nuestra boda</title>
 	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	
 	<!-- stylesheets -->
 	<link href='http://fonts.googleapis.com/css?family=Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
@@ -61,17 +63,18 @@
 					<p><strong>fiesta:</strong> 06/12/2014 / 11hs / <a href="#" data-toggle="modal" data-target="#partyIndicactions">indicaciones</a></p>
 				</div>
 				
-				<img src="images/comoLlegar-map.png" class="img-responsive mapGraphic">
+				<img src="images/comoLlegar-map.png" class="img-responsive hidden-xs mapGraphic">
 			</div>
 			<div class="internalSection tips">
-				<img src="images/tips-background.png" class="img-responsive">
+				<img src="images/tips-background.png" class="img-responsive hidden-xs">
+				<img src="images/tips-background-mobile.png" class="img-responsive visible-xs">
 			</div>
 			<div class="internalSection regalo">
-				<img src="images/regalo-background.png" class="img-responsive">
+				<img src="images/regalo-background.png" class="img-responsive hidden-xs">
 				<div class="gift">
 					<p>Con lo que puedas aportar nos vas a estar ayudando a pagar la luna de miel.</p>
 					<ul class="giftMethods">
-						<li><a href="#" data-toggle="modal" data-target="#depositoBancario"><img src="images/depositoButton.jpg"></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#depositoBancario"><img src="images/depositoButton.jpg" class="img-responsive"></a></li>
 						<li>
 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 								<input type="hidden" name="cmd" value="_donations">
@@ -80,15 +83,16 @@
 								<input type="hidden" name="item_name" value="Casamiento Pato y Diego">
 								<input type="hidden" name="currency_code" value="USD">
 								<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
-								<input type="image" src="images/paypalButton.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<input type="image" src="images/paypalButton.jpg" border="0" name="submit" class="img-responsive" alt="Regalo para Pato y Diego">
 								<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 							</form>
 						</li>
-						<li><img src="images/efectivoButton.jpg"></li>
+						<li><img src="images/efectivoButton.jpg" class="img-responsive"></li>
 					</ul>
 				</div>
 			</div>
-		</section>
+			<img src="images/home-bottom-background-mobile.jpg" class="img-responsive visible-xs footerImage">
+		</section>			
 	</div>
 	
 	<div id="partyIndicactions" class="modal fade">
@@ -107,12 +111,10 @@
         				<li>Seguir por Media caña y doblar a la derecha en calle La Baguala e inmediatamente a la izquierda hacia calle Amapola.</li>
         				<li>Seguir 5 cuadras hasta Jacarandá y Amapola.</li>
         			</ol>
-        			
+        			<br class="hidden-xs">
         			<h4>Más información</h4>
         			<div class="moreInfo">
-	        			<a href="https://www.google.com.ar/maps/dir/Superi+2539,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires,+Argentina/-34.3950728,-59.1004139/@-34.3936665,-59.0983431,4635m/data=!3m1!1e3!4m9!4m8!1m5!1m1!1s0x95bcb67ded1f1543:0x6319e5428742c7b0!2m2!1d-58.4699402!2d-34.5639207!1m0!3e0?hl=es-419" target="_blank">
-	        				Google Maps
-	        			</a>
+	        			<a href="https://www.google.com.ar/maps/dir/Superi+2539,+Buenos+Aires,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires,+Argentina/-34.3950728,-59.1004139/@-34.3936665,-59.0983431,4635m/data=!3m1!1e3!4m9!4m8!1m5!1m1!1s0x95bcb67ded1f1543:0x6319e5428742c7b0!2m2!1d-58.4699402!2d-34.5639207!1m0!3e0?hl=es-419" target="_blank">Google Maps</a>
 	        			|
 	        			<a href="images/plano.jpg" target="_target">Plano del Barrio Jularó</a>
 	        			|
