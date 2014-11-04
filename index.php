@@ -1,3 +1,20 @@
+<?php
+
+include 'guests.php';
+
+$guest = array(
+	'name' => 'Hola',
+	'singular' => true
+);
+
+$guestHash = isset($_GET['g'])?$_GET['g']:null;
+if($guestHash)
+{
+	$guests = getGuests();
+	$guest = $guests[$guestHash];
+}
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie"> <![endif]-->
@@ -44,11 +61,11 @@
 			
 			<div class="welcomeMessage">
 				<p>
-					<strong>Hola Familia D’amico</strong><br>
-					Están formalmente invitados a nuestra boda :) <br>
+					<strong><?php echo $guest['name'] ?>,</strong><br>
+					<?php echo $guest['singular']?'Estás':'Están' ?> formalmente <?php echo $guest['singular']?'invitado':'invitados' ?> a nuestra boda! <br>
 					Para saber más sobre esta gran fiesta, <br>
-					les proponemos recorrer la web. <br>
-					Sólo espermos que no nos pase lo mismo ;)
+					<?php echo $guest['singular']?'te':'les' ?> proponemos recorrer la web. <br>
+					<span class="joke">Sólo espermos que <a href="https://www.youtube.com/watch?v=ejnElP1hgS8" target="_blank">no nos pase lo mismo</a> ;)</span>
 				</p>
 			</div>
 			
@@ -66,8 +83,9 @@
 				<img src="images/comoLlegar-map.png" class="img-responsive hidden-xs mapGraphic">
 			</div>
 			<div class="internalSection tips">
+				<h3 class="visible-xs">La idea de la fiesta es que no sea tradicional. Pasaremos el día en una Casa Quinta con pileta y muy rica comida.</h3>
 				<img src="images/tips-background.png" class="img-responsive hidden-xs">
-				<img src="images/tips-background-mobile.png" class="img-responsive visible-xs">
+				<img src="images/tips-background-mobile.jpg" class="img-responsive visible-xs">
 			</div>
 			<div class="internalSection regalo">
 				<img src="images/regalo-background.png" class="img-responsive hidden-xs">
@@ -84,7 +102,6 @@
 								<input type="hidden" name="currency_code" value="USD">
 								<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
 								<input type="image" src="images/paypalButton.jpg" border="0" name="submit" class="img-responsive" alt="Regalo para Pato y Diego">
-								<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 							</form>
 						</li>
 						<li><img src="images/efectivoButton.jpg" class="img-responsive"></li>

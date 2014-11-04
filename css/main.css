@@ -60,6 +60,11 @@ section#home {
 	text-align: center;
 }
 
+.welcomeMessage a {
+	color: #be5b1f;
+	text-decoration: underline;
+}
+
 .welcomeMessage p {
 	font-family: 'Open Sans Condensed', sans-serif;
 	display: inline-block;
@@ -81,12 +86,21 @@ section#home {
 	background: rgba(247, 246, 241, 0.9);
 }
 
-.internalSection.comoLlegar h3 {
+.internalSection.comoLlegar h3, 
+.internalSection.tips h3 {
 	font-family: 'Dawning of a New Day', cursive;
 	font-size: 30px;
 	color: #5a5756;
 	width: 80%;
 	margin: 20px auto;
+}
+
+.internalSection.tips h3 {
+	font-size: 15px;
+	line-height: 15px;
+	margin: 0 auto 10px auto;
+	width: 90%;
+	text-align: center;
 }
 
 .internalSection.comoLlegar .addresses {
@@ -177,6 +191,14 @@ section#home {
 		font-size: 22px;
 	}
 	
+	.welcomeMessage p .joke {
+		font-size: 14px;
+	}
+	
+	.internalSection {
+		background: #f7f6f1;
+	}
+	
 	.internalSection.comoLlegar h3 {
 		font-size: 18px;
 	}
@@ -186,7 +208,7 @@ section#home {
 	}
 	
 	.internalSection.comoLlegar .addresses p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	
 	.internalSection.comoLlegar .mapGraphic {
@@ -212,12 +234,12 @@ section#home {
 	}
 	
 	.internalSection.regalo .gift p {
-		line-height: 22px;
-		font-size: 22px;
+		line-height: 18px;
+		font-size: 18px;
 	}
 	
 	.internalSection.regalo .gift ul.giftMethods {
-		width: 70%;
+		width: 60%;
 		margin: 30px auto 0 auto;
 	}
 	
@@ -231,7 +253,7 @@ section#home {
 	}
 	
 	.footerImage {
-		position: absolute;
+		position: fixed;
 		bottom: 0; 
 	}
 }
