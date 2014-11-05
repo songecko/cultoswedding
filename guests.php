@@ -53,7 +53,7 @@ function getGuests()
 		'singular' => false
 	),
 	'hgzz93Z7hgzz93Z7' => array(
-		'name' => 'Hola Andres y Xxxxxxxxxxx',
+		'name' => 'Hola Andy y Gemoli',
 		'singular' => false
 	),
 	'dc8lH4ZWdc8lH4ZW' => array(
@@ -73,7 +73,7 @@ function getGuests()
 		'singular' => false
 	),
 	'10opSaZe10opSaZe' => array(
-		'name' => 'Hola Wally y Xxxxxxxxxxxxx',
+		'name' => 'Hola Wally y Sofi',
 		'singular' => false
 	),
 	'YXWaqcZ3YXWaqcZ3' => array(
@@ -102,15 +102,18 @@ function getGuests()
 	),
 	'EDkMGlZZEDkMGlZZ' => array(
 		'name' => 'Hola Romi',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'BATxenZOBATxenZO' => array(
 		'name' => 'Hola Naty',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'yxsjMoZDyxsjMoZD' => array(
 		'name' => 'Hola Cyn',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'nmqXiYZynmqXiYZy' => array(
 		'name' => 'Hola Sol y Pablo',
@@ -126,7 +129,8 @@ function getGuests()
 	),
 	'65xdGCZ265xdGCZ2' => array(
 		'name' => 'Hola Naty',
-		'singular' => false
+		'singular' => true,
+		'woman' => true
 	),
 	'98Yr8BZd98Yr8BZd' => array(
 		'name' => 'Hola Mery y Pato',
@@ -134,15 +138,18 @@ function getGuests()
 	),
 	'feQU2yZzfeQU2yZz' => array(
 		'name' => 'Hola Ami',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'feQU2yZzfeQU2yZz' => array(
 		'name' => 'Hola Vero',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'ihh9vwZKihh9vwZK' => array(
 		'name' => 'Hola Marshe',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'lkInXuZVlkInXuZV' => array(
 		'name' => 'Hola San y Mao',
@@ -150,7 +157,8 @@ function getGuests()
 	),
 	'po9CptZ6po9CptZ6' => array(
 		'name' => 'Hola Bren',
-		'singular' => true
+		'singular' => true,
+		'woman' => true
 	),
 	'srAQRrZhsrAQRrZh' => array(
 		'name' => 'Hola Lili y Alexis',

@@ -14,6 +14,8 @@ if($guestHash)
 	$guest = $guests[$guestHash];
 }
 
+$letter = isset($guest['woman'])?'a':'o';
+
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="ie"> <![endif]-->
@@ -62,7 +64,7 @@ if($guestHash)
 			<div class="welcomeMessage">
 				<p>
 					<strong><?php echo $guest['name'] ?>,</strong><br>
-					<?php echo $guest['singular']?'Estás':'Están' ?> formalmente <?php echo $guest['singular']?'invitado':'invitados' ?> a nuestra boda! <br>
+					<?php echo $guest['singular']?'Estás':'Están' ?> formalmente <?php echo $guest['singular']?'invitad'.$letter:'invitad'.$letter.'s' ?> a nuestra boda! <br>
 					Para saber más sobre esta gran fiesta, <br>
 					<?php echo $guest['singular']?'te':'les' ?> proponemos recorrer la web. <br>
 					<span class="joke">Esperemos que no nos pase lo mismo que en <a href="https://www.youtube.com/watch?v=ejnElP1hgS8" target="_blank">este video</a> ;)</span>
