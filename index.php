@@ -65,7 +65,7 @@ if($guestHash)
 					<?php echo $guest['singular']?'Estás':'Están' ?> formalmente <?php echo $guest['singular']?'invitado':'invitados' ?> a nuestra boda! <br>
 					Para saber más sobre esta gran fiesta, <br>
 					<?php echo $guest['singular']?'te':'les' ?> proponemos recorrer la web. <br>
-					<span class="joke">Sólo espermos que <a href="https://www.youtube.com/watch?v=ejnElP1hgS8" target="_blank">no nos pase lo mismo</a> ;)</span>
+					<span class="joke">Esperemos que no nos pase lo mismo que en <a href="https://www.youtube.com/watch?v=ejnElP1hgS8" target="_blank">este video</a> ;)</span>
 				</p>
 			</div>
 			
@@ -84,7 +84,7 @@ if($guestHash)
 			</div>
 			<div class="internalSection tips">
 				<h3 class="visible-xs">La idea de la fiesta es que no sea tradicional. Pasaremos el día en una Casa Quinta con pileta y muy rica comida.</h3>
-				<img src="images/tips-background.png" class="img-responsive hidden-xs">
+				<img src="images/tips.jpg" class="img-responsive hidden-xs">
 				<img src="images/tips-background-mobile.jpg" class="img-responsive visible-xs">
 			</div>
 			<div class="internalSection regalo">
@@ -94,7 +94,7 @@ if($guestHash)
 					<ul class="giftMethods">
 						<li><a href="#" data-toggle="modal" data-target="#depositoBancario"><img src="images/depositoButton.jpg" class="img-responsive"></a></li>
 						<li>
-							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 								<input type="hidden" name="cmd" value="_donations">
 								<input type="hidden" name="business" value="NFF2XCNPWB2LN">
 								<input type="hidden" name="lc" value="AR">
@@ -135,7 +135,7 @@ if($guestHash)
 	        			|
 	        			<a href="images/plano.jpg" target="_target">Plano del Barrio Jularó</a>
 	        			|
-	        			<a href="#">Video explicativo</a>        			
+	        			<a href="https://www.youtube.com/watch?v=wjc7DRLhbWs" target="_blank">Video explicativo</a>        			
         			</div>
       			</div>
     		</div><!-- /.modal-content -->
@@ -150,8 +150,8 @@ if($guestHash)
 					<h4 class="modal-title">Datos del depósito bancario</h4>
       			</div>
       			<div class="modal-body">
-        			<p><strong>CBU:</strong> xxxxxxxxxxxxx </p>
-        			<p><strong>Cuenta n°:</strong> xxx/xxxxx</p>
+        			<p><strong>CBU:</strong> 0720204188000036006272</p>
+        			<p><strong>Cuenta n°:</strong> 204-360062/7</p>
         			<p><strong>Banco:</strong> Santander Río</p>
       			</div>
     		</div><!-- /.modal-content -->

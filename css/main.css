@@ -6,7 +6,7 @@ html, body {
 
 body > .container {
 	height: 100%;
-	background: url(../images/home-bottom-background.jpg) no-repeat;
+	background: url(../images/bottom-background.jpg) no-repeat;
 	background-position: bottom center;
 	background-size: contain;
 	max-width: 970px;
@@ -61,7 +61,7 @@ section#home {
 }
 
 .welcomeMessage a {
-	color: #be5b1f;
+	color: gray;
 	text-decoration: underline;
 }
 
@@ -76,6 +76,10 @@ section#home {
 	border-radius: 14px;
 }
 
+.welcomeMessage p .joke {
+	color: gray;
+}
+
 .internalSection {
 	display: none;
 	position: absolute;
@@ -83,7 +87,7 @@ section#home {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(247, 246, 241, 0.9);
+	background: #f7f6f1;
 }
 
 .internalSection.comoLlegar h3, 
@@ -127,10 +131,6 @@ section#home {
 
 #partyIndicactions .moreInfo a {
 	color: #e76c3c;
-}
-
-.internalSection.tips {
-	background: none;
 }
 
 .internalSection.regalo .gift {
@@ -243,10 +243,6 @@ section#home {
 		margin: 30px auto 0 auto;
 	}
 	
-	.internalSection.tips {
-		background: rgba(247, 246, 241, 0.9);
-	}
-	
 	.internalSection.tips img.visible-xs {
 		width: 70%;
 		margin: 0 auto;
@@ -255,5 +251,12 @@ section#home {
 	.footerImage {
 		position: fixed;
 		bottom: 0; 
+	}
+}
+
+@media only screen and (max-height : 481px) 
+{
+	.internalSection.tips img.visible-xs {
+		width: 56%;
 	}
 }
