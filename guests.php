@@ -69,7 +69,7 @@ function getGuests()
 		'singular' => false
 	),
 	'43PDk9Zp43PDk9Zp' => array(
-		'name' => 'Hola Norma, Daniela, Ailén y Alan',
+		'name' => 'Hola Norma, Daniela, Aylén y Alan',
 		'singular' => false
 	),
 	'10opSaZe10opSaZe' => array(
