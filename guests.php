@@ -65,7 +65,7 @@ function getGuests()
 		'singular' => false
 	),
 	'76gSM7ZA76gSM7ZA' => array(
-		'name' => 'Hola Gonza y Xxxxxxxxxxx',
+		'name' => 'Hola Gonza y Liz',
 		'singular' => false
 	),
 	'43PDk9Zp43PDk9Zp' => array(
